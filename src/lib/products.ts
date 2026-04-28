@@ -7,6 +7,9 @@ import shahiNimco from "@/assets/products/shahi-nimco.jpg";
 import chopatiNimco from "@/assets/products/chopati-nimco.jpg";
 import blackPepperNimco from "@/assets/products/blackpepper-nimco.jpg";
 import sweetChewra from "@/assets/products/sweet-chewra.jpg";
+import mixNimcoAsset from "@/assets/adam nimco item asstes/Mix Nimco.png";
+import blackPepperMixNimcoAsset from "@/assets/adam nimco item asstes/Black pepper mix nimco.jpeg";
+import masalaNimcoAsset from "@/assets/adam nimco item asstes/Masala Nimco.png";
 
 import namkeenChewra from "@/assets/products/namkeen-chewra.jpg";
 import namkeenPara from "@/assets/products/namkeen-para.jpg";
@@ -192,8 +195,7 @@ export const PRODUCTS: Product[] = [
     short: "Classic crunchy nimco mix",
     description:
       "A balanced classic nimco mix — crispy sev, lentils and peanuts with the perfect everyday crunch.",
-    // TODO: replace with AI-generated image
-    image: punjabiNimco,
+    image: mixNimcoAsset,
     variants: scaled(200, 190, "200g"),
     category: "regular",
   },
@@ -203,8 +205,7 @@ export const PRODUCTS: Product[] = [
     short: "Bold black pepper nimco mix",
     description:
       "A punchy nimco mix finished with cracked black pepper for a sharp, savoury kick.",
-    // TODO: replace with AI-generated image
-    image: blackPepperNimco,
+    image: blackPepperMixNimcoAsset,
     variants: scaled(200, 180, "200g"),
     category: "regular",
   },
@@ -214,8 +215,7 @@ export const PRODUCTS: Product[] = [
     short: "Spicy masala-coated nimco mix",
     description:
       "Crispy nimco mix tossed with our signature red masala — bold, crunchy and addictive.",
-    // TODO: replace with AI-generated image
-    image: masalaSev,
+    image: masalaNimcoAsset,
     variants: scaled(200, 180, "200g"),
     category: "regular",
   },

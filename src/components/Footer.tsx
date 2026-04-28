@@ -6,7 +6,7 @@ import { BUSINESS, telLink, waLink } from "@/lib/contact";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-border bg-secondary/40">
+    <footer className="mt-24 border-t border-border bg-gradient-to-br from-secondary/80 via-secondary/55 to-primary/10">
       <div className="container mx-auto px-4 lg:px-6 py-12 grid gap-10 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">

@@ -196,9 +196,12 @@ function HomePage() {
             </Link>
           </div>
 
-          <div className="md:hidden flex gap-4 overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 snap-x snap-mandatory">
+          <div className="md:hidden flex gap-4 overflow-x-auto scrollbar-hide pb-5 -mx-4 px-4 snap-x snap-mandatory">
             {specials.map((p) => (
-              <div key={p.slug} className="snap-start w-[78%] shrink-0">
+              <div
+                key={p.slug}
+                className="snap-start shrink-0 basis-[78%] max-w-[300px] first:ml-0 last:mr-1"
+              >
                 <ProductCard product={p} featured />
               </div>
             ))}

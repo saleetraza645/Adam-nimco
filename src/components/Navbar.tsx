@@ -163,12 +163,12 @@ export function Navbar() {
                 </Link>
               ))}
             </nav>
-            <div className="grid grid-cols-4 gap-2 mt-3">
+            <div className="mt-3 flex items-center gap-2 overflow-x-auto scrollbar-hide pb-1">
               <Button
                 type="button"
                 variant="outline"
                 size="sm"
-                className="rounded-full"
+                className="rounded-full shrink-0"
                 onClick={() => {
                   setCartOpen(true);
                   setOpen(false);
@@ -181,7 +181,7 @@ export function Navbar() {
                 asChild
                 variant="outline"
                 size="sm"
-                className="rounded-full"
+                className="rounded-full shrink-0"
               >
                 <a href={telLink(BUSINESS.phones[0])}>
                   <Phone className="size-4" /> Call
@@ -191,13 +191,13 @@ export function Navbar() {
                 asChild
                 size="sm"
                 variant="outline"
-                className="rounded-full bg-background/80 hover:bg-background"
+                className="rounded-full bg-background/80 hover:bg-background shrink-0"
               >
                 <a href={waLink("Hi Adam Nimco, I'd like to place an order.")}>
                   <WhatsAppIcon className="size-7 animate-whatsapp-bounce drop-shadow-sm" /> WhatsApp
                 </a>
               </Button>
-              <Button asChild variant="outline" size="sm" className="rounded-full">
+              <Button asChild variant="outline" size="sm" className="rounded-full shrink-0">
                 <a
                   href={BUSINESS.facebook}
                   target="_blank"
