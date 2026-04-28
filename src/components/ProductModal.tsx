@@ -43,17 +43,17 @@ export function ProductModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl p-0 gap-0 max-h-[94vh] overflow-y-auto sm:rounded-lg">
-        <div className="grid md:grid-cols-2">
-          <div className="bg-muted overflow-hidden md:border-r border-border">
-            <div className="w-full h-full flex items-center justify-center p-2.5 sm:p-3">
-              <div className="relative">
+      <DialogContent className="w-[95vw] max-w-2xl p-0 gap-0 max-h-[min(88vh,680px)] overflow-y-auto rounded-2xl border border-border shadow-card">
+        <div className="grid md:grid-cols-2 h-full">
+          <div className="bg-gradient-warm overflow-hidden md:border-r border-border">
+            <div className="w-full h-full flex items-center justify-center p-3 sm:p-4">
+              <div className="relative w-full h-full rounded-xl border border-border/70 bg-card/80 backdrop-blur-sm flex items-center justify-center p-2 sm:p-3">
                 <img
                   src={product.image}
                   alt={product.name}
                   width={1200}
                   height={1200}
-                  className="w-full max-h-[24vh] sm:max-h-[30vh] md:max-h-[460px] object-contain"
+                  className="max-w-full max-h-[22vh] sm:max-h-[26vh] md:max-h-[300px] object-contain"
                 />
                 <img
                   src={logo}
@@ -64,7 +64,7 @@ export function ProductModal({
               </div>
             </div>
           </div>
-          <div className="p-3.5 md:p-5 flex flex-col">
+          <div className="p-3 md:p-4 flex flex-col min-h-0">
             <DialogHeader className="text-left space-y-2">
               <div className="flex flex-wrap gap-1.5">
                 {product.badges?.map((b) => (
@@ -77,7 +77,13 @@ export function ProductModal({
               <DialogDescription className="text-sm">{product.description}</DialogDescription>
             </DialogHeader>
 
-            <div className="mt-4">
+            {product.slug === "bhail-puri-liquid" && (
+              <p className="mt-2 text-xs sm:text-sm text-muted-foreground font-semibold">
+                Note: For delivery outside Karachi, dry chutney is also available on request.
+              </p>
+            )}
+
+            <div className="mt-3">
               <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
                 Choose size
               </p>
@@ -99,7 +105,7 @@ export function ProductModal({
               </div>
             </div>
 
-            <div className="mt-3.5 flex items-center justify-between">
+            <div className="mt-3 flex items-center justify-between">
               <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                 Quantity
               </p>
@@ -122,12 +128,12 @@ export function ProductModal({
               </div>
             </div>
 
-            <div className="mt-3.5 p-2.5 rounded-xl bg-gradient-warm border border-border flex items-baseline justify-between">
+            <div className="mt-3 p-2.5 rounded-xl bg-gradient-warm border border-border flex items-baseline justify-between">
               <span className="text-sm font-medium">Total</span>
               <span className="font-display text-2xl font-extrabold text-primary">Rs {total}</span>
             </div>
 
-            <div className="mt-3 pt-3 border-t border-border sticky bottom-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90 grid grid-cols-[1fr_1fr_auto] gap-2">
+            <div className="mt-auto pt-3 border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90 grid grid-cols-[1fr_1fr_auto] gap-2">
               <Button
                 type="button"
                 variant="outline"

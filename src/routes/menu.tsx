@@ -118,8 +118,8 @@ function MenuPage() {
                     {g.label}
                   </h2>
                   {g.key === "bhail-puri" && (
-                    <p className="mt-2 text-sm text-muted-foreground max-w-2xl">
-                      Note: For delivery outside Karachi, <span className="font-semibold">dry chutney</span> is also available on request.
+                    <p className="mt-2 text-sm text-muted-foreground max-w-2xl font-semibold">
+                      Note: For delivery outside Karachi, dry chutney is also available on request.
                     </p>
                   )}
                 </div>
@@ -157,8 +157,8 @@ function MenuPage() {
       ) : (
         <>
           {cat === "bhail-puri" && (
-            <p className="mt-6 text-sm text-muted-foreground max-w-2xl mx-auto text-center">
-              Note: For delivery outside Karachi, <span className="font-semibold">dry chutney</span> is also available on request.
+            <p className="mt-6 text-sm text-muted-foreground max-w-2xl mx-auto text-center font-semibold">
+              Note: For delivery outside Karachi, dry chutney is also available on request.
             </p>
           )}
           {cat === "bhail-puri" || cat === "sweets" ? (

@@ -177,9 +177,9 @@ function HomePage() {
       )}
 
       {/* SPECIAL ITEMS */}
-      <section className="bg-gradient-warm border-y border-border min-h-[calc(100svh-4rem)] lg:min-h-[calc(100svh-5rem)] flex items-center">
-        <div className="container mx-auto px-4 lg:px-6 py-10 lg:py-12 w-full">
-          <div className="flex items-end justify-between mb-8">
+      <section className="bg-gradient-warm border-y border-border h-[calc(100svh-4rem)] lg:h-[calc(100svh-5rem)]">
+        <div className="container mx-auto px-4 lg:px-6 py-8 lg:py-10 w-full h-full flex flex-col">
+          <div className="flex items-end justify-between mb-6 lg:mb-7">
             <div>
               <span className="text-primary font-bold text-sm uppercase tracking-wider">
                 🔥 Most Loved
@@ -196,20 +196,17 @@ function HomePage() {
             </Link>
           </div>
 
-          <div className="md:hidden flex gap-4 overflow-x-auto scrollbar-hide pb-5 -mx-4 px-4 snap-x snap-mandatory">
+          <div className="flex-1 min-h-0">
+            <div className="h-full flex items-stretch gap-4 lg:gap-5 overflow-x-auto scrollbar-hide pb-3 -mx-4 px-4 snap-x snap-mandatory">
             {specials.map((p) => (
               <div
                 key={p.slug}
-                className="snap-start shrink-0 basis-[78%] max-w-[300px] first:ml-0 last:mr-1"
+                className="snap-start shrink-0 h-full basis-[78%] max-w-[300px] md:basis-[45%] md:max-w-[360px] lg:basis-[33%] lg:max-w-[380px] xl:basis-[30%] first:ml-0 last:mr-1"
               >
                 <ProductCard product={p} featured />
               </div>
             ))}
           </div>
-          <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-6">
-            {specials.map((p) => (
-              <ProductCard key={p.slug} product={p} />
-            ))}
           </div>
         </div>
       </section>
