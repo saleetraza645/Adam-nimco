@@ -191,7 +191,7 @@ export const PRODUCTS: Product[] = [
   // ============ REGULAR ITEMS ============
   {
     slug: "mix-nimco",
-    name: "Mix Nimco Salted (i6 items)",
+    name: "Mix Nimco Salted (16 items)",
     short: "Classic crunchy nimco mix",
     description:
       "A balanced classic nimco mix — crispy sev, lentils and peanuts with the perfect everyday crunch.",
