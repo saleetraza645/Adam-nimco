@@ -191,7 +191,7 @@ export const PRODUCTS: Product[] = [
   // ============ REGULAR ITEMS ============
   {
     slug: "mix-nimco",
-    name: "Mix Nimco",
+    name: "Mix Nimco Salted (i6 items)",
     short: "Classic crunchy nimco mix",
     description:
       "A balanced classic nimco mix — crispy sev, lentils and peanuts with the perfect everyday crunch.",
@@ -573,7 +573,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "papri-coin",
-    name: "Coin Papri",
+    name: "Coin Papri Salted",
     short: "Small round crackers",
     description: "Coin-sized round crispy crackers — bite-sized and addictive.",
     image: papriCoin,

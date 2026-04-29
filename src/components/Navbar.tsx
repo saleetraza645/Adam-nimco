@@ -51,8 +51,8 @@ export function Navbar() {
             onClick={() => setOpen(false)}
             aria-label="Adam Nimco home"
           >
-            <span className="font-display text-lg sm:text-xl font-extrabold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent tracking-tight">
-              Adam Nimco
+            <span className="font-display text-lg sm:text-xl font-extrabold uppercase bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent tracking-tight">
+              ADAM NIMCO
             </span>
           </Link>
 
