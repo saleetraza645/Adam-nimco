@@ -63,7 +63,7 @@ function HomePage() {
                 <Award className="size-3.5" /> SINCE 1939 • SADDAR, KARACHI
               </span>
               <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] text-balance animate-fade-up">
-                Adam Nimco
+                ADAM NIMCO
                 <span className="block bg-gradient-to-r from-accent to-amber-300 bg-clip-text text-transparent">
                   Fresh Snacks Daily
                 </span>
