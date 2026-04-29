@@ -95,13 +95,15 @@ function HomePage() {
               </div>
             </div>
             <div className="flex justify-center lg:justify-end animate-pop-in order-1 lg:order-2">
-              <img
-                src={logo}
-                alt="Adam Nimco logo since 1939"
-                width={420}
-                height={420}
-                className="h-52 md:h-72 lg:h-96 w-auto object-contain drop-shadow-2xl animate-float-slow"
-              />
+              <div className="rounded-3xl bg-yellow-400/95 p-3 md:p-4 shadow-2xl ring-1 ring-black/10">
+                <img
+                  src={logo}
+                  alt="Adam Nimco logo since 1939"
+                  width={420}
+                  height={420}
+                  className="h-52 md:h-72 lg:h-96 w-auto object-contain drop-shadow-2xl animate-float-slow"
+                />
+              </div>
             </div>
           </div>
         </div>
