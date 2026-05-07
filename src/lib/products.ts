@@ -36,7 +36,7 @@ import chipsCrinkleMasala from "@/assets/products/chips-crinkle-masala.jpg";
 import chipsFinger from "@/assets/products/chips-finger.jpg";
 import chipsFingerMasala from "@/assets/products/chips-finger-masala.jpg";
 import chipsFingerPepper from "@/assets/products/chips-finger-pepper.jpg";
-import chipsHyderabadi from "@/assets/products/chips-hyderabadi.jpg";
+import chipsHyderabadi from "@/assets/products/chips-hyderabadi.jpeg";
 import topPops from "@/assets/products/top-pops.jpg";
 import topPopsMasala from "@/assets/products/top-pops-masala.jpg";
 
