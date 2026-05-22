@@ -211,7 +211,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "masala-nimco",
-    name: "Masala Nimco",
+    name: "Red Chilli Mix Nimco",
     short: "Spicy masala-coated nimco mix",
     description:
       "Crispy nimco mix tossed with our signature red masala — bold, crunchy and addictive.",
@@ -239,7 +239,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "namkeen-para",
-    name: "Namkeen Para",
+    name: "Namkeen Pare",
     short: "Crispy salty diamond crackers",
     description: "Crispy fried salty flour crackers — light, flaky and addictive.",
     image: namkeenPara,
@@ -421,9 +421,9 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "chips-finger",
-    name: "Finger Chips",
+    name: "Fingure Chips Salted",
     short: "Long potato sticks",
-    description: "Crispy long-cut finger chips — golden and lightly salted.",
+    description: "Crispy long-cut fingure chips salted — golden and lightly salted.",
     image: chipsFinger,
     variants: scaled(200, 240, "200g"),
     category: "chips",
@@ -439,7 +439,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "chips-finger-blackpepper",
-    name: "Finger Black Pepper Chips",
+    name: "Fingure Chips Black Pepper",
     short: "Bold black pepper finger chips",
     description: "Long finger chips with cracked black pepper — sharp and savoury.",
     image: chipsFingerPepper,
@@ -512,7 +512,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "peanut-besan",
-    name: "Besan Wali Peanut",
+    name: "Beasan Peanut",
     short: "Gram-flour coated peanuts",
     description: "Peanuts wrapped in crispy gram flour batter — Indian-style classic.",
     image: peanutBesan,
@@ -533,10 +533,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "moti-bundi",
-    name: "Moti Bundi",
+    name: "Dahi bundi",
     short: "Bigger, crunchy boondi pearls",
     description:
-      "Moti bundi — larger pearls with a satisfying crunch and classic savoury flavour.",
+      "Dahi bundi — larger pearls with a satisfying crunch and classic savoury flavour.",
     image: motiBundi,
     variants: scaled(200, 180, "200g"),
     category: "bondi",
@@ -582,7 +582,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "papri-coin-masala",
-    name: "Coin Masala Papri",
+    name: "Coin Papri Masala",
     short: "Spicy round crackers",
     description: "Coin papri with bold red masala coating.",
     image: papriCoinMasala,
