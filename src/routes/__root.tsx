@@ -3,7 +3,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { CartCheckout } from "@/components/CartCheckout";
-import fullLogo from "@/assets/adam-logo.png";
 import { BUSINESS } from "@/lib/contact";
 import { CartProvider } from "@/lib/cart";
 
@@ -13,12 +12,23 @@ const SITE_URL = "https://adamnimco.com";
 const SITE_TITLE = "Adam Nimco — Fresh Nimco, Snacks & Sweets in Saddar Karachi";
 const SITE_DESCRIPTION =
   "Since 1939, Adam Nimco serves fresh nimco, bhail puri, papri, peanuts and sweets in Saddar Karachi. Order quickly on WhatsApp.";
-const OG_IMAGE = `${SITE_URL}${fullLogo}`;
+const LOGO_URL = `${SITE_URL}/logo.png`;
+const OG_IMAGE = LOGO_URL;
+const ORGANIZATION_JSON_LD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: BUSINESS.name,
+  url: SITE_URL,
+  logo: LOGO_URL,
+  image: LOGO_URL,
+  sameAs: [BUSINESS.facebook],
+});
 const LOCAL_BUSINESS_JSON_LD = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "FoodEstablishment",
   name: BUSINESS.name,
-  image: OG_IMAGE,
+  image: LOGO_URL,
+  logo: LOGO_URL,
   telephone: BUSINESS.phones,
   address: {
     "@type": "PostalAddress",
@@ -90,8 +100,11 @@ export const Route = createRootRoute({
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "canonical", href: SITE_URL },
-      { rel: "icon", href: fullLogo, type: "image/png" },
-      { rel: "apple-touch-icon", href: fullLogo },
+      { rel: "icon", href: "/favicon.ico", sizes: "32x32" },
+      { rel: "icon", href: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { rel: "icon", href: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" },
+      { rel: "manifest", href: "/site.webmanifest" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -110,6 +123,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script type="application/ld+json">{ORGANIZATION_JSON_LD}</script>
         <script type="application/ld+json">{LOCAL_BUSINESS_JSON_LD}</script>
         <script type="application/ld+json">{WEBSITE_JSON_LD}</script>
       </head>
